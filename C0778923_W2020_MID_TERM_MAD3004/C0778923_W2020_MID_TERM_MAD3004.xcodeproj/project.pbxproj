@@ -14,6 +14,7 @@
 		190E2A9123F613660007FC2E /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E2A9023F613660007FC2E /* Internet.swift */; };
 		190E2A9323F6138D0007FC2E /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E2A9223F6138D0007FC2E /* Mobile.swift */; };
 		190E2A9523F613B60007FC2E /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E2A9423F613B60007FC2E /* Hydro.swift */; };
+		190E2A9723F613DE0007FC2E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E2A9623F613DE0007FC2E /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		190E2A9023F613660007FC2E /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		190E2A9223F6138D0007FC2E /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		190E2A9423F613B60007FC2E /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		190E2A9623F613DE0007FC2E /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				190E2A9023F613660007FC2E /* Internet.swift */,
 				190E2A9223F6138D0007FC2E /* Mobile.swift */,
 				190E2A9423F613B60007FC2E /* Hydro.swift */,
+				190E2A9623F613DE0007FC2E /* Customer.swift */,
 			);
 			path = C0778923_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				190E2A9523F613B60007FC2E /* Hydro.swift in Sources */,
 				190E2A8F23F6133D0007FC2E /* Bill.swift in Sources */,
 				190E2A8D23F60CC80007FC2E /* Extension.swift in Sources */,
+				190E2A9723F613DE0007FC2E /* Customer.swift in Sources */,
 				190E2A8B23F60B620007FC2E /* IDisplay.swift in Sources */,
 				190E2A9323F6138D0007FC2E /* Mobile.swift in Sources */,
 				190E2A8423F60AFF0007FC2E /* main.swift in Sources */,

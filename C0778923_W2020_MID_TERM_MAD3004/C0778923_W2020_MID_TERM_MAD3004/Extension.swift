@@ -21,26 +21,12 @@ extension String {
         
                    func isValidMobileNumber() -> Bool{
                       let phoneRegex = "[235689][0-9]{6}([0-9]{3})?"
-                       
-                       let passwordTest = NSPredicate(format:"SELF MATCHES %@",  passwordRegEx)
-                       return passwordTest.evaluate(with: self)
+                       let predicate = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
+                       return  predicate.evaluate(with: self)
                    }
-                   public func isPhone()->Bool {
-                          if self.isAllDigits() == true {
-                              let phoneRegex = "[235689][0-9]{6}([0-9]{3})?"
-                              let predicate = NSPredicate(format: "SELF MATCHES %@", phoneRegex)
-                              return  predicate.evaluate(with: self)
-                          }else {
-                              return false
-                          }
-                      }
                   
                }
 
-               extension Float{
-                   func currency()-> String{
-                       return "$\(self)"
-                   }
 }
 
 

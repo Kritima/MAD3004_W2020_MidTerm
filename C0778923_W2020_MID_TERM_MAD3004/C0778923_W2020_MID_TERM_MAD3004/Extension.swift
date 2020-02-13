@@ -26,7 +26,10 @@ extension String {
                    }
                   
                }
-
+ 
+extension Float {
+                
+                 }
 }
 
 

@@ -8,5 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
+print("---Get Customer by id----")
+arrayOrders.getCustomerById(i: 3)
 

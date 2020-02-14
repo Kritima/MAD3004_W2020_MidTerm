@@ -26,8 +26,15 @@ class Mobile :Bill {
          self.mobileNumber = mNumber
          self.internetGbUsed = gbUsed
          self.minuteUsed = mUsed
-        super.init(bId: billId, bDate: billDate, bType: billType, bAmount: billAmount)
+        super.init(bId: billId, bDate: billDate, bType: billType, bAmount: calculateBillAmount(gbUsed: <#T##Int#>, mUsed: <#T##Int#>))
            
+       }
+    
+    func calculateBillAmount(gbUsed: Int, mUsed: Int)-> Float {
+           var total : Float
+           total=0.0
+        total = 250.69
+           return total;
        }
          
     override func display()

@@ -12,6 +12,14 @@ class Hydro :IDisplay{
     var agencyName: String
     var unitConsumed: Float
     
- 
+ init(aName: String, uConsumed: Float) {
+      self.agencyName = aName
+      self.unitConsumed = uConsumed
+  }
+    
+  func display() {
+      print("Agency Name: \(agencyName)")
+      print("Unit Consumed: \(unitConsumed)")
+  }
     
 }

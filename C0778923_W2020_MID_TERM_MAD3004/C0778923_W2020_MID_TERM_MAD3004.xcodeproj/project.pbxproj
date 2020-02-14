@@ -16,6 +16,7 @@
 		190E2A9523F613B60007FC2E /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E2A9423F613B60007FC2E /* Hydro.swift */; };
 		190E2A9723F613DE0007FC2E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E2A9623F613DE0007FC2E /* Customer.swift */; };
 		190E2A9923F61F4A0007FC2E /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E2A9823F61F4A0007FC2E /* Enum.swift */; };
+		190E2A9B23F65DE80007FC2E /* Insurance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190E2A9A23F65DE80007FC2E /* Insurance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		190E2A9423F613B60007FC2E /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
 		190E2A9623F613DE0007FC2E /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		190E2A9823F61F4A0007FC2E /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		190E2A9A23F65DE80007FC2E /* Insurance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insurance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				190E2A9423F613B60007FC2E /* Hydro.swift */,
 				190E2A9623F613DE0007FC2E /* Customer.swift */,
 				190E2A9823F61F4A0007FC2E /* Enum.swift */,
+				190E2A9A23F65DE80007FC2E /* Insurance.swift */,
 			);
 			path = C0778923_W2020_MID_TERM_MAD3004;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				190E2A9923F61F4A0007FC2E /* Enum.swift in Sources */,
 				190E2A9323F6138D0007FC2E /* Mobile.swift in Sources */,
 				190E2A8423F60AFF0007FC2E /* main.swift in Sources */,
+				190E2A9B23F65DE80007FC2E /* Insurance.swift in Sources */,
 				190E2A9123F613660007FC2E /* Internet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

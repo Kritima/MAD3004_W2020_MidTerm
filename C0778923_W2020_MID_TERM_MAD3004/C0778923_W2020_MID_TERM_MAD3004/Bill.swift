@@ -21,7 +21,13 @@ class Bill: IDisplay {
            self.billType = bType
            
        }
-       
+    
+       func display() {
+                print("Bill Id: \(self.billId)")
+                print("Bill Date: \(self.billDate)")
+                print("Bill Type: \(self.billType)")
+                print("Bill Amount : \(String(describing: billAmount!.currency()))")
+            }
     
     
 }

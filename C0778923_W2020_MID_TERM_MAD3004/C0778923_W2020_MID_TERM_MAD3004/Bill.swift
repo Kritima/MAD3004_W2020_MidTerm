@@ -10,6 +10,10 @@ import Foundation
 
 class Bill: IDisplay {
    
-    
+    var billId: Int
+       var billDate: Date
+       var billType: String
+       var billAmount: Float!
+       
     
 }

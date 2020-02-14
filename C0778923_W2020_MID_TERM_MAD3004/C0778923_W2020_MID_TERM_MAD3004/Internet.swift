@@ -17,7 +17,12 @@ class Internet :Bill {
         self.providerName = pName
         self.internetGbUsed = gbUsed
     }
-      
+    
+    override func display()
+      {
+          print("Provider Name: \(providerName)")
+          print("Internet Usage: \(internetGbUsed)")
+      }
        
     
 }

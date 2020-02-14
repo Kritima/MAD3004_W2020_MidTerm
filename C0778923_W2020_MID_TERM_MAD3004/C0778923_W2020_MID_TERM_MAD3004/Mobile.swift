@@ -15,6 +15,13 @@ class Mobile :Bill {
           var internetGbUsed: Int
         var minuteUsed: Int
        
+    init(mName: String, mNumber: String, gbUsed: Int, mUsed: Int) {
+             self.mobileModelName = mName
+             self.mobileNumber = mNumber
+             self.internetGbUsed = gbUsed
+             self.minuteUsed = mUsed
+         }
+         
        
     
 }

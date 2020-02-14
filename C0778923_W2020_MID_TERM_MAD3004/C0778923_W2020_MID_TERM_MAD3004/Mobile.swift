@@ -26,6 +26,7 @@ class Mobile :Bill {
          self.mobileNumber = mNumber
          self.internetGbUsed = gbUsed
          self.minuteUsed = mUsed
+        super.init(bId: billId, bDate: billDate, bType: billType, bAmount: billAmount)
            
        }
          

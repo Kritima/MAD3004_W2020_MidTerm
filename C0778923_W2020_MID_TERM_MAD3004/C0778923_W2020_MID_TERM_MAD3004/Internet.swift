@@ -12,6 +12,12 @@ class Internet :Bill {
     
        var providerName: String
        var internetGbUsed: Float
+    
+    init(pName: String, gbUsed: Float) {
+        self.providerName = pName
+        self.internetGbUsed = gbUsed
+    }
+      
        
     
 }

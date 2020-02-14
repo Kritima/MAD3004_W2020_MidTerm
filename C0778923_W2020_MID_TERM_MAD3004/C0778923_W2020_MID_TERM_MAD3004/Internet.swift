@@ -11,13 +11,20 @@ import Foundation
 class Internet :Bill {
     
        var providerName: String
-       var internetGbUsed: Float
+       var internetGbUsed: Int
     
-    init(pName: String, gbUsed: Float) {
+    init(pName: String, gbUsed: Int) {
         self.providerName = pName
         self.internetGbUsed = gbUsed
-        super.init(bId: billId, bDate: billDate, bType: billType, bAmount: billAmount)
+        super.init(bId: billId, bDate: billDate, bType: billType, bAmount: calculateBillAmount(gbUsed: <#T##Int#>))
     }
+    
+    func calculateBillAmount(gbUsed: Int)-> Float {
+              var total : Float
+              total=0.0
+        total = 56.50
+              return total;
+          }
     
     override func display()
       {

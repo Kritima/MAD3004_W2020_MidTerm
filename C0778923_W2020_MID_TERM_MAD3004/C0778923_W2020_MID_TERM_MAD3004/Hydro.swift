@@ -15,8 +15,15 @@ class Hydro :Bill {
  init(aName: String, uConsumed: Int) {
       self.agencyName = aName
       self.unitConsumed = uConsumed
-    super.init(bId: billId, bDate: billDate, bType: billType, bAmount: billAmount)
+    super.init(bId: billId, bDate: billDate, bType: billType, bAmount: calculateBillAmount(unitConsumed: <#T##Int#>))
   }
+    
+    func calculateBillAmount(unitConsumed: Int)-> Float {
+              var total : Float
+              total=0.0
+        total = 45.35
+              return total;
+          }
     
   override func display()
   {

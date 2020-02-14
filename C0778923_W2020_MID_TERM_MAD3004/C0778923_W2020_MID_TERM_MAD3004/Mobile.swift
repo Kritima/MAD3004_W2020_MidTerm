@@ -22,6 +22,13 @@ class Mobile :Bill {
              self.minuteUsed = mUsed
          }
          
+    override func display()
+             {
+                 print("Manufacturer Name: \(mobileModelName)")
+                 print("Mobile Number: \(mobileNumber)")
+                print("Internet Usage: \(internetGbUsed)")
+               print("Minutes Usage: \(minuteUsed)")
+             }
        
     
 }

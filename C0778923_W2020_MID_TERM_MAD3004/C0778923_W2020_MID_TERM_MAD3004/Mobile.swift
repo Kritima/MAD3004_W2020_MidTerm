@@ -14,13 +14,20 @@ class Mobile :Bill {
           var mobileNumber: String
           var internetGbUsed: Int
         var minuteUsed: Int
+    
+    init() {
+       }
        
-    init(mName: String, mNumber: String, gbUsed: Int, mUsed: Int) {
-             self.mobileModelName = mName
-             self.mobileNumber = mNumber
-             self.internetGbUsed = gbUsed
-             self.minuteUsed = mUsed
-         }
+       init?(mName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
+           if !mNumber.isValidMobileNumber(){
+               throw MobileError.Invalid("Invalid Mobile Number")
+           }
+         self.mobileModelName = mName
+         self.mobileNumber = mNumber
+         self.internetGbUsed = gbUsed
+         self.minuteUsed = mUsed
+           
+       }
          
     override func display()
              {

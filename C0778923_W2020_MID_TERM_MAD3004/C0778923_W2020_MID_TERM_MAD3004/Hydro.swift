@@ -10,9 +10,9 @@ import Foundation
 
 class Hydro :Bill {
     var agencyName: String
-    var unitConsumed: Float
+    var unitConsumed: Int
     
- init(aName: String, uConsumed: Float) {
+ init(aName: String, uConsumed: Int) {
       self.agencyName = aName
       self.unitConsumed = uConsumed
   }

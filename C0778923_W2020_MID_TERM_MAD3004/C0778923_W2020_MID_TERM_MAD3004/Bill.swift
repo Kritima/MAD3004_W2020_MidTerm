@@ -15,5 +15,13 @@ class Bill: IDisplay {
        var billType: String
        var billAmount: Float!
        
+    init(bId: Int, bDate: Date, bType: String) {
+           self.billId = bId
+           self.billDate = bDate
+           self.billType = bType
+           
+       }
+       
+    
     
 }

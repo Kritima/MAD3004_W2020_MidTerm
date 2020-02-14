@@ -18,7 +18,7 @@ class Mobile :Bill {
     init() {
        }
        
-       init?(mName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
+       init?(bId: Int, bDate: Date, bType: String, mName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
            if !mNumber.isValidMobileNumber(){
                throw MobileError.Invalid("Invalid Mobile Number")
            }
@@ -39,6 +39,7 @@ class Mobile :Bill {
          
     override func display()
              {
+                super.display()
                  print("Manufacturer Name: \(mobileModelName)")
                  print("Mobile Number: \(mobileNumber)")
                 print("Internet Usage: \(internetGbUsed)")

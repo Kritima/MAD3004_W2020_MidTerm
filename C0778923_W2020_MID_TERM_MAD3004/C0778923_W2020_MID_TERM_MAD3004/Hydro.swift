@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+class Hydro :IDisplay{
+    var agencyName: String
+    var unitConsumed: Float
+    
+ 
+    
+}

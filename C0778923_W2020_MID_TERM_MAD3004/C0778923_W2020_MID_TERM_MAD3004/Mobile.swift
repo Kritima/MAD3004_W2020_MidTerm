@@ -10,7 +10,11 @@ import Foundation
 
 class Mobile :Bill {
     
-     
+     var mobileModelName: String
+          var mobileNumber: String
+          var internetGbUsed: Int
+        var minuteUsed: Int
+       
        
     
 }

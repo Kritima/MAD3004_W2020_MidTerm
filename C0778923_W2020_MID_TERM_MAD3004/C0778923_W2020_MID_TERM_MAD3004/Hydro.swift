@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Hydro :IDisplay{
+class Hydro :Bill {
     var agencyName: String
     var unitConsumed: Float
     
@@ -17,7 +17,8 @@ class Hydro :IDisplay{
       self.unitConsumed = uConsumed
   }
     
-  func display() {
+  override func display()
+  {
       print("Agency Name: \(agencyName)")
       print("Unit Consumed: \(unitConsumed)")
   }

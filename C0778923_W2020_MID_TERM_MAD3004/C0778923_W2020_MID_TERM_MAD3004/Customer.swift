@@ -42,13 +42,21 @@ class Customer: IDisplay {
         print("Total Bill Amount to Pay : \(String(describing: totalBillAmount!.currency()))")
     }
     
-    func calculateTotalAmount(billsDict : [Bill])-> Float {
+    func calculateTotalAmount(billsDict : [Bill]) throws -> Float
+    {
+        if billsDict.isEmpty{
+                      throw MobileError.Invalid("~~~NOTE : This Customer has no bills")
+                  }
+        else{
            var total : Float
            total=0.0
            for i in 0..<billsDict.count{
             total += billsDict[i].billAmount
            }
            return total;
+       }
+    
+
        }
        
     func getCustomerById() -> String {

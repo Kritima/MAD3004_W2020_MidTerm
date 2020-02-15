@@ -19,6 +19,8 @@ var customer1 = Customer(cId: "C0001", fName: "Pritish", lName: "Patel", eId: "a
 
 var customer2 = Customer(cId: "C0002", fName: "Vipul", lName: "Garg", eId: "adurrant1@github.io", bdict: [hydro1,internet1])
 
+var customer3 = Customer(cId: "C0003", fName: "Anetta", lName: "Langrick", eId: "bgeillc@europa.eu", bdict: [])
+
 
 //
 //for (_, customer) in arrayCustomers{

@@ -13,7 +13,7 @@ class Bill: IDisplay {
     var billId: String
        var billDate: Date
        var billType: String
-       var billAmount: Float?
+       var billAmount: Float!
        
     init(bId: String, bDate: Date, bType: String) {
            self.billId = bId
@@ -26,7 +26,7 @@ class Bill: IDisplay {
                 print("Bill Id: \(self.billId)")
                 print("Bill Date: \(self.billDate)")
                 print("Bill Type: \(self.billType)")
-                print("Bill Amount : \(String(describing: billAmount?.currency()))")
+                print("Bill Amount : \(String(describing: billAmount!.currency()))")
             }
     
     

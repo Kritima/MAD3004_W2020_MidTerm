@@ -8,4 +8,7 @@
 
 import Foundation
 
-
+class Customer: IDisplay {
+  
+    
+}

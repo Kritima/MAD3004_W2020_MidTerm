@@ -8,5 +8,10 @@
 
 import Foundation
 
-class Insurance :Bill {
+/*class Insurance :Bill {
     
+    var insuranceProviderName: String
+      var insuranceType: String
+      var internetGbUsed: Int
+    var minuteUsed: Int
+}*/

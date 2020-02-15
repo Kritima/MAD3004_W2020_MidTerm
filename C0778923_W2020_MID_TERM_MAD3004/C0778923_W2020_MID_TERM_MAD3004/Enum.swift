@@ -11,3 +11,16 @@ import Foundation
 enum MobileError: Error{
     case Invalid(String)
 }
+
+enum BillType: String{
+    case Hydro
+    case Mobile
+    case Internet
+}
+
+enum InsuranceType: String{
+    case Life
+    case Health
+    case Car
+    case Property
+}

@@ -12,10 +12,10 @@ class Bill: IDisplay {
    
     var billId: String
        var billDate: Date
-       var billType: String
+       var billType: BillType
        var billAmount: Float!
        
-    init(bId: String, bDate: Date, bType: String) {
+    init(bId: String, bDate: Date, bType: BillType) {
            self.billId = bId
            self.billDate = bDate
            self.billType = bType

@@ -17,3 +17,18 @@ class Insurance :Bill {
     var totalDays: Int
     var totalInstallmentToPay: Float
 
+init(bId: String, bDate: Date, bType: BillType, iProviderName: String, iType: InsuranceType, sDate: Date, eDate: Date  ) {
+      self.insuranceProviderName = iProviderName
+      self.insuranceType = iType
+     self.startDate = sDate
+    self.endDate = eDate
+    totalDays = calculateTotalDays(start: startDate, end: endDate)
+     super.init(bId:bId, bDate:bDate, bType:bType)
+        super.billAmount = calculateInstallmentAmount(totalDays: (self.totalDays))
+  }
+    
+   
+    
+}
+
+

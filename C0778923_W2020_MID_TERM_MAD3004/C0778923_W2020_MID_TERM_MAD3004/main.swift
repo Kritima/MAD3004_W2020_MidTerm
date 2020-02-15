@@ -14,6 +14,8 @@ var internet1 = Internet(bId: "INTB0001", bDate: Date(), bType: "Internet", pNam
 hydro1.display()
 internet1.display()
 
+var customer1 = Customer(cId: "C0001", fName: "Pritish", lName: "Patel", eId: "amallabyg@topsy.com", bdict: [hydro1,internet1])
+
 //print("---Get Customer by id----")
 //arrayOrders.getCustomerById(i: 3)
 

@@ -21,5 +21,14 @@ class Customer: IDisplay {
     var billsDict: [Bill]
     var totalBillAmount: Float!
     
+    init(cId: String, fName: String, lName: String, eId: String, bdict: [Bill]) {
+        self.customerId = cId
+        self.firstName = fName
+        self.lastName = lName
+        self.emailId = eId
+        self.billsDict = bdict
+        self.totalBillAmount = calculateTotlaOrder(products: self.billsDict)
+        
+    }
     
-}
+

@@ -51,5 +51,8 @@ class Customer: IDisplay {
            return total;
        }
        
+    func getCustomerById() -> String {
+        return self.customerId
+    }
     
 }

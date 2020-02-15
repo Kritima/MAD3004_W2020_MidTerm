@@ -27,7 +27,11 @@ init(bId: String, bDate: Date, bType: BillType, iProviderName: String, iType: In
         super.billAmount = calculateInstallmentAmount(totalDays: (self.totalDays))
   }
     
-   
+   func calculateTotalDays(start: Date, end: Date) -> Int {
+                return Calendar.current.dateComponents([.day], from: start, to: end).day!
+            }
+      
+
     
 }
 

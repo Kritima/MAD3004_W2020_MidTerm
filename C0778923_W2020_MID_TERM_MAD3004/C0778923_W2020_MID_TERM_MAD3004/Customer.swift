@@ -31,4 +31,16 @@ class Customer: IDisplay {
         
     }
     
-
+   func display() {
+        print("Customer Id: \(self.customerId)")
+        print("Full Name: \(self.fullName)")
+       print("Email Id: \(self.emailId)")
+        print("---- Bill Information ----")
+        for p in 0..<product.count{
+            print((product[p].pName))
+        }
+        print("Total Bill Amount to Pay : \(String(describing: totalBillAmount!.currency()))")
+    }
+    
+    
+}

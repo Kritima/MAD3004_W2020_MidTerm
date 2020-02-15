@@ -39,5 +39,5 @@ for (_, customer) in sortedByValueDictionary {
 }
 
 //print("---Get Customer by id----")
-//arrayOrders.getCustomerById(i: 3)
+//arrayCustomers.getCustomerById(i : "C0002")
 

@@ -27,6 +27,17 @@ for (_, customer) in arrayCustomers{
     print(customer.display())
 }
 
+let sortedByValueDictionary = arrayCustomers.sorted {
+    $0.1.totalBillAmount < $1.1.totalBillAmount
+}
+
+
+print("----Sorted-----")
+for (_, customer) in sortedByValueDictionary {
+
+    print(customer.display())
+}
+
 //print("---Get Customer by id----")
 //arrayOrders.getCustomerById(i: 3)
 

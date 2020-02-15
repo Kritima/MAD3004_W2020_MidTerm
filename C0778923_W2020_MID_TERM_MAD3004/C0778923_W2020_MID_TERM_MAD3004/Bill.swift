@@ -10,12 +10,12 @@ import Foundation
 
 class Bill: IDisplay {
    
-    var billId: Int
+    var billId: String
        var billDate: Date
        var billType: String
        var billAmount: Float?
        
-    init(bId: Int, bDate: Date, bType: String) {
+    init(bId: String, bDate: Date, bType: String) {
            self.billId = bId
            self.billDate = bDate
            self.billType = bType

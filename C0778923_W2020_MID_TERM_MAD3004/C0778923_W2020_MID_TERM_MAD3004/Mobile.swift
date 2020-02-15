@@ -18,7 +18,7 @@ class Mobile :Bill {
     //init() {
     //}
        
-       init?(bId: Int, bDate: Date, bType: String, mName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
+       init?(bId: String, bDate: Date, bType: String, mName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
            if !mNumber.isValidMobileNumber(){
                throw MobileError.Invalid("Invalid Mobile Number")
            }

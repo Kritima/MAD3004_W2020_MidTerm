@@ -16,8 +16,10 @@ class Internet :Bill {
     init(bId: Int, bDate: Date, bType: String, pName: String, gbUsed: Int) {
         self.providerName = pName
         self.internetGbUsed = gbUsed
-        super.init(bId: billId, bDate: billDate, bType: billType, bAmount: calculateBillAmount(gbUsed: <#T##Int#>))
+        super.init(bId: bId, bDate: bDate, bType: bType)
+        super.billAmount = calculateBillAmount(gbUsed:(self.internetGbUsed))
     }
+
     
     func calculateBillAmount(gbUsed: Int)-> Float {
               var total : Float

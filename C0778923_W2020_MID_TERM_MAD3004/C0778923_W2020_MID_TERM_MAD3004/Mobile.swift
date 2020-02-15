@@ -15,8 +15,8 @@ class Mobile :Bill {
           var internetGbUsed: Int
         var minuteUsed: Int
     
-    init() {
-       }
+    //init() {
+    //}
        
        init?(bId: Int, bDate: Date, bType: String, mName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
            if !mNumber.isValidMobileNumber(){
@@ -26,7 +26,9 @@ class Mobile :Bill {
          self.mobileNumber = mNumber
          self.internetGbUsed = gbUsed
          self.minuteUsed = mUsed
-        super.init(bId: billId, bDate: billDate, bType: billType, bAmount: calculateBillAmount(gbUsed: <#T##Int#>, mUsed: <#T##Int#>))
+        super.init(bId: bId, bDate: bDate, bType: bType)
+        super.billAmount = calculateBillAmount(gbUsed:(self.internetGbUsed), mUsed: self.minuteUsed)
+        
            
        }
     

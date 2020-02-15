@@ -27,7 +27,7 @@ class Customer: IDisplay {
         self.lastName = lName
         self.emailId = eId
         self.billsDict = bdict
-        self.totalBillAmount = calculateTotlaOrder(products: self.billsDict)
+        self.totalBillAmount = calculateTotalAmount(billsDict: self.billsDict)
         
     }
     
@@ -36,11 +36,20 @@ class Customer: IDisplay {
         print("Full Name: \(self.fullName)")
        print("Email Id: \(self.emailId)")
         print("---- Bill Information ----")
-        for p in 0..<product.count{
-            print((product[p].pName))
+        for i in 0..<billsDict.count{
+            print((billsDict[i].display()))
         }
         print("Total Bill Amount to Pay : \(String(describing: totalBillAmount!.currency()))")
     }
     
+    func calculateTotalAmount(billsDict : [Bill])-> Float {
+           var total : Float
+           total=0.0
+           for i in 0..<billsDict.count{
+            total += billsDict[i].billAmount
+           }
+           return total;
+       }
+       
     
 }

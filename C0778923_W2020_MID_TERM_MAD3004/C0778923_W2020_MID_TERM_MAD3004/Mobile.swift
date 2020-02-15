@@ -16,7 +16,8 @@ class Mobile :Bill {
         var minuteUsed: Int
     
     //init() {
-    //}
+      //  super.init()
+   // }
        
        init?(bId: String, bDate: Date, bType: String, mName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
            if !mNumber.isValidMobileNumber(){

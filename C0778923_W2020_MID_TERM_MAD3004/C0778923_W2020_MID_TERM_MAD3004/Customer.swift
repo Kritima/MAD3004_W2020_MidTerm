@@ -21,7 +21,8 @@ class Customer: IDisplay {
     var billsDict: [Bill]
     var totalBillAmount: Float!
     
-    init(cId: String, fName: String, lName: String, eId: String, bdict: [Bill]) {
+    init(cId: String, fName: String, lName: String, eId: String, bdict: [Bill])
+    {
         self.customerId = cId
         self.firstName = fName
         self.lastName = lName
@@ -42,10 +43,10 @@ class Customer: IDisplay {
         print("Total Bill Amount to Pay : \(String(describing: totalBillAmount!.currency()))")
     }
     
-    func calculateTotalAmount(billsDict : [Bill]) throws -> Float
+    func calculateTotalAmount(billsDict : [Bill]) -> Float
     {
         if billsDict.isEmpty{
-                      throw MobileError.Invalid("~~~NOTE : This Customer has no bills")
+            return 0.0
                   }
         else{
            var total : Float

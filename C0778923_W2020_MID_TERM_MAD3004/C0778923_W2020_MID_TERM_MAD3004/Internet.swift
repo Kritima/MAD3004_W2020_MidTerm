@@ -32,7 +32,7 @@ class Internet :Bill {
       {
           super.display()
           print("Provider Name: \(providerName)")
-          print("Internet Usage: \(internetGbUsed)")
+          print("Internet Usage: \(String(describing: internetGbUsed.internet()))")
       }
        
     

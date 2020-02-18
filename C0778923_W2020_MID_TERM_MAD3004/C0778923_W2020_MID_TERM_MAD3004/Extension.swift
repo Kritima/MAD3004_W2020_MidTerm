@@ -41,6 +41,10 @@ extension Int {
     func minutes()-> String{
         return "\(self) Minutes"
     }
+    
+    func internet()-> String{
+        return "\(self) GB"
+    }
 }
 
 

@@ -11,6 +11,7 @@ import Foundation
 class Mobile :Bill {
     
      var mobileModelName: String
+    var planName: String
           var mobileNumber: String
           var internetGbUsed: Int
         var minuteUsed: Int
@@ -19,12 +20,13 @@ class Mobile :Bill {
       //  super.init()
    // }
        
-       init?(bId: String, bDate: Date, bType: BillType, mName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
+    init?(bId: String, bDate: Date, bType: BillType, mName: String,pName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
            if !mNumber.isValidMobileNumber(){
                throw MobileError.Invalid("Invalid Mobile Number")
            }
          self.mobileModelName = mName
          self.mobileNumber = mNumber
+        self.planName = pName
          self.internetGbUsed = gbUsed
          self.minuteUsed = mUsed
         super.init(bId: bId, bDate: bDate, bType: bType)
@@ -44,9 +46,10 @@ class Mobile :Bill {
              {
                 super.display()
                  print("Manufacturer Name: \(mobileModelName)")
+                print("Plan Name: \(planName)")
                  print("Mobile Number: \(mobileNumber)")
-                print("Internet Usage: \(internetGbUsed)")
-               print("Minutes Usage: \(String(describing: billAmount!.currency()))")
+                print("Internet Usage: \(String(describing: internetGbUsed.internet()))")
+               print("Minutes Usage: \(String(describing: minuteUsed.minutes()))")
              }
        
     

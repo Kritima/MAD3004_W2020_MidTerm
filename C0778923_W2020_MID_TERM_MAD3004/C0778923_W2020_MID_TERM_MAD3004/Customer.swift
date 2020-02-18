@@ -34,9 +34,9 @@ class Customer: IDisplay {
     
    func display() {
         print("Customer Id: \(self.customerId)")
-        print("Full Name: \(self.fullName)")
-       print("Email Id: \(self.emailId)")
-        print("---- Bill Information ----")
+        print("Customer Full Name: \(self.fullName)")
+       print("Customer Email Id: \(self.emailId)")
+        print("             ---- Bill Information ----")
         for i in 0..<billsDict.count{
             print((billsDict[i].display()))
         }

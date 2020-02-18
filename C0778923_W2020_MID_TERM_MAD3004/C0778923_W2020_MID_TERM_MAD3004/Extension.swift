@@ -32,6 +32,13 @@ extension Float {
                                     return "$\(self)"
                  }
 }
+    
+extension Int {
+     func units()-> String{
+                        return "\(self) Units"
+     }
+    
+}
 
 
 

@@ -46,7 +46,7 @@ class Mobile :Bill {
                  print("Manufacturer Name: \(mobileModelName)")
                  print("Mobile Number: \(mobileNumber)")
                 print("Internet Usage: \(internetGbUsed)")
-               print("Minutes Usage: \(minuteUsed)")
+               print("Minutes Usage: \(String(describing: billAmount!.currency()))")
              }
        
     

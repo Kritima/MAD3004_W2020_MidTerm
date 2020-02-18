@@ -6,7 +6,7 @@
 //  Copyright © 2020 Kritima Kukreja. All rights reserved.
 //
 
-import Foundation
+/*import Foundation
 
 class Insurance :Bill {
     
@@ -31,8 +31,21 @@ init(bId: String, bDate: Date, bType: BillType, iProviderName: String, iType: In
                 return Calendar.current.dateComponents([.day], from: start, to: end).day!
             }
       
-
+    func calculateInstallmentAmount(totalDays: Int)-> Float {
+                var total : Float
+                total=0.0
+          total = 45.35
+                return total;
+            }
+      
+    override func display()
+    {
+       super.display()
+        print("Provider Name: \(insuranceProviderName)")
+        //print("Unit Consumed: \(unitConsumed)")
+    }
     
 }
+ */
 
 

@@ -23,8 +23,9 @@ class Internet :Bill {
     
     func calculateBillAmount(gbUsed: Int)-> Float {
               var total : Float
+        let pricePerGb = 0.15
               total=0.0
-        total = 56.50
+        total = Float (perGbprice) * Float(gbUsed) 
               return total;
           }
     

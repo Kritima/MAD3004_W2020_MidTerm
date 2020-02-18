@@ -8,8 +8,9 @@
 
 import Foundation
 
-enum MobileError: Error{
-    case Invalid(String)
+enum BillError: Error{
+    case InvalidMobile
+    case InvalidEmail
 }
 
 enum BillType: String{

@@ -20,9 +20,9 @@ class Mobile :Bill {
       //  super.init()
    // }
        
-    init?(bId: String, bDate: Date, bType: BillType, mName: String,pName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
+    init(bId: String, bDate: Date, bType: BillType, mName: String,pName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
            if !mNumber.isValidMobileNumber(){
-               throw MobileError.Invalid("Invalid Mobile Number")
+               throw BillError.InvalidMobile
            }
          self.mobileModelName = mName
          self.mobileNumber = mNumber
@@ -37,8 +37,10 @@ class Mobile :Bill {
     
     func calculateBillAmount(gbUsed: Int, mUsed: Int)-> Float {
            var total : Float
+        let pricePerGb = 5
+        let pricePerMinue = 0.8
            total=0.0
-        total = 250.69
+        total = Float (pricePerGb) * Float (gbUsed) + Float(pricePerMinue) * Float (mUsed)
            return total;
        }
          

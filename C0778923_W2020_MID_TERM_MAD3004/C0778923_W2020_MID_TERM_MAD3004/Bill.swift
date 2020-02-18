@@ -30,5 +30,14 @@ class Bill: IDisplay {
                 print("Bill Amount : \(String(describing: billAmount!.currency()))")
             }
     
+    func getCurrentDate()-> String{
+           let calendar = Calendar.current
+
+           let day = calendar.component(.day, from: Date())
+           let month = calendar.component(.month, from: Date())
+           let year = calendar.component(.year, from: Date())
+           return "\(month),\(day),\(year)"
+       }
+    
     
 }

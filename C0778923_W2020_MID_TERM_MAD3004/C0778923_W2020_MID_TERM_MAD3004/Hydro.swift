@@ -21,8 +21,9 @@ class Hydro :Bill {
     
     func calculateBillAmount(unitConsumed: Int)-> Float {
               var total : Float
+        let pricePerUnit = 0.5
               total=0.0
-        total = 45.35
+        total = Float(unitConsumed) * Float(pricePerUnit)
               return total;
           }
     

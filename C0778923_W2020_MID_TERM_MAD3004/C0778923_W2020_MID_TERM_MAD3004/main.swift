@@ -17,11 +17,11 @@ var internet2 = Internet(bId: "INTB0002", bDate: Date(), bType: BillType.Interne
 
 var customer1 = Customer(cId: "C0001", fName: "Pritish", lName: "Patel", eId: "amallabyg@topsy.com", bdict: [hydro1,internet1])
 
-var customer2 = Customer(cId: "C0002", fName: "Vipul", lName: "Garg", eId: "adurrant1@github.io", bdict: [hydro2,mobile2!,internet2])
+var customer2 = Customer(cId: "C0002", fName: "Vipul", lName: "Garg", eId: "adurrant1@github.io", bdict: [hydro2,mobile2,internet2])
 
-//var customer3 = Customer(cId: "C0003", fName: "Anetta", lName: "Langrick", eId: "bgeillc@europa.eu", bdict: [])
+var customer3 = Customer(cId: "C0003", fName: "Anetta", lName: "Langrick", eId: "bgeillc@europa.eu", bdict: [])
 
-var arrayCustomers=[customer1.customerId: customer1,customer2.customerId: customer2]
+var arrayCustomers=[customer1.customerId: customer1,customer2.customerId: customer3,customer3.customerId: customer3]
 
 for (_, customer) in arrayCustomers{
     print(customer.display())

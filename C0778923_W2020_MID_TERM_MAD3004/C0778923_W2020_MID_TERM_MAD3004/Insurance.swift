@@ -6,12 +6,11 @@
 //  Copyright © 2020 Kritima Kukreja. All rights reserved.
 //
 
-/*import Foundation
+import Foundation
 
 class Insurance :Bill {
     
     var insuranceProviderName: String
-      var insuranceType: InsuranceType
       var startDate: Date
     var endDate: Date
     var totalDays: Int
@@ -19,7 +18,6 @@ class Insurance :Bill {
 
 init(bId: String, bDate: Date, bType: BillType, iProviderName: String, iType: InsuranceType, sDate: Date, eDate: Date  ) {
       self.insuranceProviderName = iProviderName
-      self.insuranceType = iType
      self.startDate = sDate
     self.endDate = eDate
     totalDays = calculateTotalDays(start: startDate, end: endDate)
@@ -42,10 +40,13 @@ init(bId: String, bDate: Date, bType: BillType, iProviderName: String, iType: In
     {
        super.display()
         print("Provider Name: \(insuranceProviderName)")
-        //print("Unit Consumed: \(unitConsumed)")
+        print("Start Date: \(startDate)")
+        print("End Date: \(endDate)")
+        print("Insurance In Days: \(totalDays)")
+        print("Total Installement To Pay : \(totalInstallmentToPay)")
     }
     
 }
- */
+ 
 
 

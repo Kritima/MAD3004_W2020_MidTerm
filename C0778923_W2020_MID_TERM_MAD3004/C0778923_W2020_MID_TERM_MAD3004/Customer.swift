@@ -23,6 +23,10 @@ class Customer: IDisplay {
     
     init(cId: String, fName: String, lName: String, eId: String, bdict: [Bill])
     {
+        if !emailId.isValidEmail(){
+                   throw BillError.InvalidEmail("Invalid Customer Email ID")
+                   
+               }
         self.customerId = cId
         self.firstName = fName
         self.lastName = lName

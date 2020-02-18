@@ -9,17 +9,16 @@
 import Foundation
 
 enum BillError: Error{
-    case InvalidMobile
-    case InvalidEmail
+    
+    case InvalidMobile(String)
+    case InvalidEmail(String)
 }
 
 enum BillType: String{
+    
     case Hydro
     case Mobile
     case Internet
-}
-
-enum InsuranceType: String{
     case Life
     case Health
     case Car

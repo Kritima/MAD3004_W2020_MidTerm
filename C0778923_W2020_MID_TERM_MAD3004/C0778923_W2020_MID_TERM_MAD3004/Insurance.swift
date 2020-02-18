@@ -6,22 +6,28 @@
 //  Copyright © 2020 Kritima Kukreja. All rights reserved.
 //
 
-/*import Foundation
+import Foundation
 
 class Insurance :Bill {
     
     var insuranceProviderName: String
       var startDate: Date
     var endDate: Date
-    var totalDays: Int
-    var totalInstallmentToPay: Float
+    var totalDays: Int {get
+    {
+        return calculateTotalDays(start: startDate, end: endDate)
+        }
+    }
+    var totalInstallmentToPay: Float {get
+    {
+        return calculateInstallmentAmount(totalDays: totalDays)
+        }
+    }
 
     init(bId: String, bDate: Date, bType: BillType, iProviderName: String, sDate: Date, eDate: Date) {
     self.insuranceProviderName = iProviderName
      self.startDate = sDate
      self.endDate = eDate
-        totalDays = calculateTotalDays(start: self.startDate, end: self.endDate)
-        self.totalInstallmentToPay = calculateInstallmentAmount(totalDays: self.totalDays)
         super.init(bId:bId, bDate:bDate, bType:bType)
           super.billAmount = calculateBillAmount(totalInstallmentToPay: (self.totalInstallmentToPay))
 
@@ -60,7 +66,39 @@ class Insurance :Bill {
     }
     
 }
+   
+   /*init(billId:Int, billDate:Date?,billType: BillType,provider:String, Insurancetype:InsuranceType,startDate:Date, endDate:Date){
+     self.billId = billId
+     self.billDate = billDate
+     self.billType = billType
+     self.provider = provider
+     self.Insurancetype = Insurancetype
+     self.startDate = startDate
+     self.endDate = endDate
+      
+   }
+    
+
+   func display() -> String {
+     return "Bill ID: \(self.billId)\n" +
+     "Bill Date: \(String(describing: (self.billDate)!.getForamttedDate()))\n" +
+     "Bill Type: \(BillType.Insurance)\n" +
+     "Insurance Type: \(InsuranceType.Home)\n" +
+     "Duration : 12 Months \n" +
+     "Insurance Start Date: \(self.startDate)\n" +
+     "Insurance End Date: \(self.endDate)\n" +
+     "Total Bill Amount: \(totalBillAmount.currency())\n"
+     }
+     
+    
+    
+ }
  */
- 
+
+
+
+
+
+
 
 

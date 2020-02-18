@@ -10,8 +10,8 @@ import Foundation
 
 enum BillError: Error{
     
-    case InvalidMobile(String)
-    case InvalidEmail(String)
+    case InvalidMobile
+    case InvalidEmail
 }
 
 enum BillType: String{

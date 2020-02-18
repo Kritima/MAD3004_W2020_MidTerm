@@ -16,16 +16,16 @@ class Mobile :Bill {
           var internetGbUsed: Int
         var minuteUsed: Int
     
-    //init() {
-      //  super.init()
-   // }
        
-    init?(bId: String, bDate: Date, bType: BillType, mName: String,pName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
-           if !mNumber.isValidMobileNumber(){
+    init(bId: String, bDate: Date, bType: BillType, mName: String,pName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
+           if mNumber.isValidMobileNumber(){
+            self.mobileNumber = mNumber
+        }
+        else
+           {
                throw BillError.InvalidMobile
            }
          self.mobileModelName = mName
-         self.mobileNumber = mNumber
         self.planName = pName
          self.internetGbUsed = gbUsed
          self.minuteUsed = mUsed
@@ -50,8 +50,8 @@ class Mobile :Bill {
                  print("Manufacturer Name: \(mobileModelName)")
                 print("Plan Name: \(planName)")
                  print("Mobile Number: \(mobileNumber)")
-                print("Internet Usage: \(String(describing: internetGbUsed.internet()))")
-               print("Minutes Usage: \(String(describing: minuteUsed.minutes()))")
+                print("Internet Usage: \(String(internetGbUsed.internet()))")
+               print("Minutes Usage: \(String(minuteUsed.minutes()))")
              }
        
     

@@ -31,7 +31,7 @@ class Hydro :Bill {
   {
      super.display()
       print("Agency Name: \(agencyName)")
-      print("Unit Consumed: \(String(describing: unitConsumed.units()))")
+      print("Unit Consumed: \(String(unitConsumed.units()))")
   }
     
 }

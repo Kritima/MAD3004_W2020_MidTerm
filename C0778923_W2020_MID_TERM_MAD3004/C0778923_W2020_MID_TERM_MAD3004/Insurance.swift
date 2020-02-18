@@ -6,7 +6,7 @@
 //  Copyright © 2020 Kritima Kukreja. All rights reserved.
 //
 
-import Foundation
+/*import Foundation
 
 class Insurance :Bill {
     
@@ -20,10 +20,10 @@ class Insurance :Bill {
     self.insuranceProviderName = iProviderName
      self.startDate = sDate
      self.endDate = eDate
-        self.totalDays = calculateTotalDays(start: self.startDate, end: self.endDate)
+        totalDays = calculateTotalDays(start: self.startDate, end: self.endDate)
         self.totalInstallmentToPay = calculateInstallmentAmount(totalDays: self.totalDays)
-        super.billAmount = calculateBillAmount(totalInstallmentToPay: (self.totalInstallmentToPay))
         super.init(bId:bId, bDate:bDate, bType:bType)
+          super.billAmount = calculateBillAmount(totalInstallmentToPay: (self.totalInstallmentToPay))
 
   }
     
@@ -60,7 +60,7 @@ class Insurance :Bill {
     }
     
 }
- 
+ */
  
 
 

@@ -40,7 +40,7 @@ class Insurance :Bill {
     func calculateInstallmentAmount(totalDays: Int)-> Float {
                    var total : Float
            let principal = 100
-           let rate = 0.13
+        let rate = 0.013
                    total=0.0
              total = Float (principal) * Float (rate) * Float (totalDays)
                    return total;
@@ -58,42 +58,15 @@ class Insurance :Bill {
     override func display()
     {
        super.display()
-        print("Provider Name: \(insuranceProviderName)")
-        print("Start Date: \(startDate)")
-        print("End Date: \(endDate)")
-        print("Insurance In Days: \(totalDays)")
-        print("Total Installement To Pay : \(totalInstallmentToPay)")
+        print("\t\tProvider Name: \(insuranceProviderName)")
+        print("\t\tStart Date: \(startDate.getForamttedDate())")
+        print("\t\tEnd Date: \(endDate.getForamttedDate())")
+        print("\t\tInsurance In Days: \(totalDays)")
+        print("\t\tTotal Installement To Pay : \(totalInstallmentToPay)")
     }
     
 }
-   
-   /*init(billId:Int, billDate:Date?,billType: BillType,provider:String, Insurancetype:InsuranceType,startDate:Date, endDate:Date){
-     self.billId = billId
-     self.billDate = billDate
-     self.billType = billType
-     self.provider = provider
-     self.Insurancetype = Insurancetype
-     self.startDate = startDate
-     self.endDate = endDate
-      
-   }
-    
 
-   func display() -> String {
-     return "Bill ID: \(self.billId)\n" +
-     "Bill Date: \(String(describing: (self.billDate)!.getForamttedDate()))\n" +
-     "Bill Type: \(BillType.Insurance)\n" +
-     "Insurance Type: \(InsuranceType.Home)\n" +
-     "Duration : 12 Months \n" +
-     "Insurance Start Date: \(self.startDate)\n" +
-     "Insurance End Date: \(self.endDate)\n" +
-     "Total Bill Amount: \(totalBillAmount.currency())\n"
-     }
-     
-    
-    
- }
- */
 
 
 

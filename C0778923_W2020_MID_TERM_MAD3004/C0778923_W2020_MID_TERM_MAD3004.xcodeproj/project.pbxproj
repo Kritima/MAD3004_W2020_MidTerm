@@ -75,26 +75,18 @@
 		190E2A8223F60AFF0007FC2E /* C0778923_W2020_MID_TERM_MAD3004 */ = {
 			isa = PBXGroup;
 			children = (
-				1931D73B23FCA985005C90AD /* Bills */,
 				190E2A8323F60AFF0007FC2E /* main.swift */,
 				190E2A8A23F60B620007FC2E /* IDisplay.swift */,
 				190E2A8C23F60CC80007FC2E /* Extension.swift */,
 				190E2A9223F6138D0007FC2E /* Mobile.swift */,
+				190E2A9A23F65DE80007FC2E /* Insurance.swift */,
+				190E2A9423F613B60007FC2E /* Hydro.swift */,
+				190E2A9023F613660007FC2E /* Internet.swift */,
 				190E2A9623F613DE0007FC2E /* Customer.swift */,
+				190E2A8E23F6133D0007FC2E /* Bill.swift */,
 				190E2A9823F61F4A0007FC2E /* Enum.swift */,
 			);
 			path = C0778923_W2020_MID_TERM_MAD3004;
-			sourceTree = "<group>";
-		};
-		1931D73B23FCA985005C90AD /* Bills */ = {
-			isa = PBXGroup;
-			children = (
-				190E2A9A23F65DE80007FC2E /* Insurance.swift */,
-				190E2A9023F613660007FC2E /* Internet.swift */,
-				190E2A9423F613B60007FC2E /* Hydro.swift */,
-				190E2A8E23F6133D0007FC2E /* Bill.swift */,
-			);
-			path = Bills;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

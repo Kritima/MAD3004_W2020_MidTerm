@@ -47,11 +47,11 @@ class Mobile :Bill {
     override func display()
              {
                 super.display()
-                 print("Manufacturer Name: \(mobileModelName)")
-                print("Plan Name: \(planName)")
-                 print("Mobile Number: \(mobileNumber)")
-                print("Internet Usage: \(String(internetGbUsed.internet()))")
-               print("Minutes Usage: \(String(minuteUsed.minutes()))")
+                 print("\t\tManufacturer Name: \(mobileModelName)")
+                print("\t\tPlan Name: \(planName)")
+                 print("\t\tMobile Number: \(mobileNumber)")
+                print("\t\tInternet Usage: \(String(internetGbUsed.internet()))")
+               print("\t\tMinutes Usage: \(String(minuteUsed.minutes()))")
              }
        
     

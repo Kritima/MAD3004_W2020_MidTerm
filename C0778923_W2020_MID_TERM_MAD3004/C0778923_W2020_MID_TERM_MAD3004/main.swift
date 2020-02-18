@@ -9,17 +9,17 @@
 import Foundation
 do{
     
-let hydro1 = Hydro(bId: "HYDB0001", bDate: Date.from(year: 2019, month: 2, day: 18)!, bType: BillType.Hydro, aName: "Planet Energy", uConsumed: 29)
+    let hydro1 = Hydro(bId: "HYDB0001", bDate: Date.from(year: 2020, month: 2, day: 18)!, bType: BillType.Hydro, aName: "Planet Energy", uConsumed: 29)
     
-let internet1 = Internet(bId: "INTB0001", bDate: Date(), bType: BillType.Internet, pName: "Rogers", gbUsed: 500)
+    let internet1 = Internet(bId: "INTB0001", bDate: Date.from(year: 2020, month: 2, day: 18)!, bType: BillType.Internet, pName: "Rogers", gbUsed: 500)
 
-let hydro2 = Hydro(bId: "HYDB0002", bDate: Date.from(year: 2019, month: 2, day: 18)!, bType: BillType.Hydro, aName: "Bruce Power", uConsumed: 29)
+    let hydro2 = Hydro(bId: "HYDB0002", bDate: Date.from(year: 2020, month: 2, day: 18)!, bType: BillType.Hydro, aName: "Bruce Power", uConsumed: 29)
 
-let mobile2 = try Mobile(bId: "MOBB0002", bDate: Date.from(year: 2019, month: 2, day: 18)!, bType: BillType.Mobile, mName: "Apple Inc. iPhone X MAX+" ,pName: "LTE+3G 9.5GB Promo plan", mNumber: "9012345678", gbUsed: 4, mUsed: 230)
+let mobile2 = try Mobile(bId: "MOBB0002", bDate: Date.from(year: 2020, month: 2, day: 18)!, bType: BillType.Mobile, mName: "Apple Inc. iPhone X MAX+" ,pName: "LTE+3G 9.5GB Promo plan", mNumber: "9012345678", gbUsed: 4, mUsed: 230)
 
 let internet2 = Internet(bId: "INTB0002", bDate: Date.from(year: 2019, month: 2, day: 18)!, bType: BillType.Internet, pName: "Rogers", gbUsed: 500)
 
-//var insurance = Insurance(bId: "INS0001", bDate: Date.from(year: 2019, month: 2, day: 18)!, bType: BillType.Property, iProviderName: "Aviva Canada Inc.", sDate: Date.from(year: 2003, month: 07, day: 07), eDate: <#T##Date#>)
+    let insurance = Insurance(bId: "INS0001", bDate: Date.from(year: 2019, month: 2, day: 18)!, bType: BillType.Property, iProviderName: "Aviva Canada Inc.", sDate: Date.from(year: 20019, month: 02, day: 07)!, eDate: Date.from(year: 2020, month: 02, day: 07)!)
 
 let customer1 = try Customer(cId: "C0001", fName: "Pritish", lName: "Patel", eId: "amallabyg@topsy.com", bdict: [hydro1,internet1])
 
@@ -28,9 +28,9 @@ let customer1 = try Customer(cId: "C0001", fName: "Pritish", lName: "Patel", eId
 let customer3 = try Customer(cId: "C0003", fName: "Anetta", lName: "Langrick", eId: "bgeillc@europa.eu", bdict: [])
     
 
-//let customer4 = try Customer(cId: "C0004", fName: "Albert", lName: "Einstein", eId: "lovelyalbu@einstein.sun", bdict: [hydro2,mobile2,internet2])
+let customer4 = try Customer(cId: "C0004", fName: "Albert", lName: "Einstein", eId: "lovelyalbu@einstein.sun", bdict: [insurance])
 
-    var arrayCustomers=[customer1.customerId: customer1,customer2.customerId: customer2,customer3.customerId: customer3]
+    var arrayCustomers=[customer1.customerId: customer1,customer2.customerId: customer2,customer3.customerId: customer3,customer4.customerId: customer4]
 
 for (_, customer) in arrayCustomers{
     print(customer.display())

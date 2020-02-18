@@ -32,8 +32,8 @@ class Internet :Bill {
     override func display()
       {
           super.display()
-          print("Provider Name: \(providerName)")
-          print("Internet Usage: \(String(describing: internetGbUsed.internet()))")
+          print("\t\tProvider Name: \(providerName)")
+          print("\t\tInternet Usage: \(String(describing: internetGbUsed.internet()))")
       }
        
     

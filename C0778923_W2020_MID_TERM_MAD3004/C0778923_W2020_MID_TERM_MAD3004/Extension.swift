@@ -65,7 +65,7 @@ extension Date
     public func getForamttedDate() -> String
 {
   let dateFormatterPrint = DateFormatter()
-  dateFormatterPrint.dateFormat = "EEEE, dd-MM-YYYY"
+  dateFormatterPrint.dateFormat = "EEEE, d MMMM, yyyy"
   let formattedDate = dateFormatterPrint.string(from: self)
   return formattedDate
 }

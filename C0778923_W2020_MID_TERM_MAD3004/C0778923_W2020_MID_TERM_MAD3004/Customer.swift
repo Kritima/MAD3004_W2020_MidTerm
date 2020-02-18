@@ -48,13 +48,13 @@ class Customer: IDisplay {
     }
     else
        {
-        print("             ---- Bill Information ----")
+        print("\t             ---- Bill Information ----")
         for i in 0..<billsDict.count{
             print((billsDict[i].display()))
         }
-        print("******************************************")
-        print("Total Bill Amount to Pay : \(String(describing: totalBillAmount!.currency()))")
-       print("******************************************")
+        print("\t\t******************************************")
+        print("\t\t\tTotal Bill Amount to Pay : \(String(totalBillAmount!.currency()))")
+       print("\t\t******************************************")
     }
     }
     

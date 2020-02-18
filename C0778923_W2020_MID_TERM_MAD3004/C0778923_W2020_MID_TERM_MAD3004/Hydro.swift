@@ -30,8 +30,8 @@ class Hydro :Bill {
   override func display()
   {
      super.display()
-      print("Agency Name: \(agencyName)")
-      print("Unit Consumed: \(String(unitConsumed.units()))")
+      print("\t\tAgency Name: \(agencyName)")
+      print("\t\tUnit Consumed: \(String(unitConsumed.units()))")
   }
     
 }

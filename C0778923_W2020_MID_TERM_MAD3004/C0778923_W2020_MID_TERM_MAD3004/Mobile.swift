@@ -20,7 +20,7 @@ class Mobile :Bill {
       //  super.init()
    // }
        
-    init(bId: String, bDate: Date, bType: BillType, mName: String,pName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
+    init?(bId: String, bDate: Date, bType: BillType, mName: String,pName: String, mNumber: String, gbUsed: Int, mUsed: Int) throws{
            if !mNumber.isValidMobileNumber(){
                throw BillError.InvalidMobile
            }

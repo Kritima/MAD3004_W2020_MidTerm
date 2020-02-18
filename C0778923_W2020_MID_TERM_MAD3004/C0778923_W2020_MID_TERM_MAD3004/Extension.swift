@@ -46,6 +46,21 @@ extension Int {
         return "\(self) GB"
     }
 }
+    
+extension Dictionary {
+        func getCustomerById(i: String) {
+            for (_, customer) in arrayCustomers {
+                if (customer.getCustomerById() == i ) {
+                    print(customer.display())
+                }
+                else
+                {
+                    print("Customer Not Found...")
+                }
+            }
+        }
+        
+    }
 
 
 

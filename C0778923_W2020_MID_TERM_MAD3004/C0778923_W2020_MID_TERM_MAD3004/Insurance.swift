@@ -6,7 +6,7 @@
 //  Copyright © 2020 Kritima Kukreja. All rights reserved.
 //
 
-import Foundation
+/*import Foundation
 
 class Insurance :Bill {
     
@@ -16,13 +16,14 @@ class Insurance :Bill {
     var totalDays: Int
     var totalInstallmentToPay: Float
 
-init(bId: String, bDate: Date, bType: BillType, iProviderName: String, iType: InsuranceType, sDate: Date, eDate: Date  ) {
+init(bId: String, bDate: Date, bType: BillType, iProviderName: String, sDate: Date, eDate: Date ) {
       self.insuranceProviderName = iProviderName
      self.startDate = sDate
     self.endDate = eDate
-    totalDays = calculateTotalDays(start: startDate, end: endDate)
      super.init(bId:bId, bDate:bDate, bType:bType)
-        super.billAmount = calculateInstallmentAmount(totalDays: (self.totalDays))
+    self.totalDays = calculateTotalDays(start: self.startDate, end: self.endDate)
+    self.totalInstallmentToPay = calculateInstallmentAmount(totalDays: self.totalDays)
+        super.billAmount = calculateBillAmount(totalInstallmentToPay: (self.totalInstallmentToPay))
   }
     
    func calculateTotalDays(start: Date, end: Date) -> Int {
@@ -31,10 +32,20 @@ init(bId: String, bDate: Date, bType: BillType, iProviderName: String, iType: In
       
     func calculateInstallmentAmount(totalDays: Int)-> Float {
                 var total : Float
+        let principal = 100
+        let rate = 0.13
                 total=0.0
-          total = 45.35
+          total = Float (principal) * Float (rate) * Float (totalDays)
                 return total;
             }
+
+    func calculateBillAmount(totalInstallmentToPay: Float)-> Float {
+          var total : Float
+    let noOfDays = 12
+          total=0.0
+    total = Float(totalInstallmentToPay) / Float(noOfDays)
+          return total;
+      }
       
     override func display()
     {
@@ -47,6 +58,7 @@ init(bId: String, bDate: Date, bType: BillType, iProviderName: String, iType: In
     }
     
 }
+ */
  
 
 

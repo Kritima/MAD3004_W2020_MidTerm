@@ -25,7 +25,7 @@ class Internet :Bill {
               var total : Float
         let pricePerGb = 0.15
               total=0.0
-        total = Float (perGbprice) * Float(gbUsed) 
+        total = Float (pricePerGb) * Float(gbUsed) 
               return total;
           }
     

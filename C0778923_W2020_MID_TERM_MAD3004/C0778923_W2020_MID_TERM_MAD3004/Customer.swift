@@ -36,6 +36,12 @@ class Customer: IDisplay {
         print("Customer Id: \(self.customerId)")
         print("Customer Full Name: \(self.fullName)")
        print("Customer Email Id: \(self.emailId)")
+       if billsDict.isEmpty
+       {
+        print("~~~NOTE : This Customer has no bills")
+    }
+    else
+       {
         print("             ---- Bill Information ----")
         for i in 0..<billsDict.count{
             print((billsDict[i].display()))
@@ -44,14 +50,10 @@ class Customer: IDisplay {
         print("Total Bill Amount to Pay : \(String(describing: totalBillAmount!.currency()))")
        print("******************************************")
     }
+    }
     
     func calculateTotalAmount(billsDict : [Bill]) -> Float
     {
-        if billsDict.isEmpty{
-            print("~~~NOTE : This Customer has no bills")
-            return 0
-                  }
-        else{
            var total : Float
            total=0.0
            for i in 0..<billsDict.count{
@@ -60,10 +62,7 @@ class Customer: IDisplay {
            return total;
        }
     
-}
-       
-    func getCustomerById() -> String {
-        return self.customerId
-    }
-    
+           func getCustomerById() -> String {
+                  return self.customerId
+              }
 }
